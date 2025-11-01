@@ -16,6 +16,9 @@ function Contact() {
           <label className="block text-sm mb-2">Email</label>
           <input type="email" required className="w-full border p-2 rounded mb-4" />
 
+          <label className="block text-sm mb-2">Mobile Number</label>
+          <input type="tel" required className="w-full border p-2 rounded mb-4" />
+
           <label className="block text-sm mb-2">Message</label>
           <textarea required className="w-full border p-2 rounded mb-4" rows={4} />
 
