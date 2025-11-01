@@ -1,9 +1,5 @@
 import React from 'react';
 
-const COLORS = {
-  primary: '#2C1810',
-};
-
 function Hero({ nav }) {
   return (
     <section id="home" className="h-screen flex items-center">

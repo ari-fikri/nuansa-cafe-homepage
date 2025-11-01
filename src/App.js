@@ -7,16 +7,11 @@ import Cabins from './components/Cabins';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 
-// Constants
-const COLORS = {
-  background: '#d4a373', // Main background color (updated)
-};
-
 // Data
 const menu = [
   { id: 'espresso', title: 'Espresso', desc: 'Single origin, pulled to order.', price: 'Rp 25.000', img: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1200&q=80' },
   { id: 'avocado', title: 'Avocado Toast', desc: 'Sourdough, smashed avocado, chili flakes.', price: 'Rp 55.000', img: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1200&q=80' },
-  { id: 'cake', title: 'Signature Cake', desc: "Daily-baked, ask our counter for today\'s flavor.", price: 'Rp 45.000', img: 'https://picsum.photos/id/1080/1200/900' },
+  { id: 'cake', title: 'Signature Cake', desc: "Daily-baked, ask our counter for today's flavor.", price: 'Rp 45.000', img: 'https://picsum.photos/id/1080/1200/900' },
 ];
 
 const cabins = [
@@ -143,8 +138,8 @@ function App() {
         <div className="max-w-5xl mx-auto px-6 text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>© {new Date().getFullYear()} Nuansa Cafe — All rights reserved.</div>
           <div className="flex gap-4">
-            <a href="#" aria-label="Instagram">Instagram</a>
-            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="https://www.instagram.com/nuansa_suites/" aria-label="Instagram">Instagram</a>
+            <a href="https://www.tiktok.com/@nuansa.suites" aria-label="Tiktok">Tiktok</a>
           </div>
         </div>
       </footer>

@@ -27,10 +27,10 @@ function Contact() {
 
         <div className="bg-white p-6 rounded-[12px] shadow-sm">
           <div className="text-sm text-gray-700 mb-3">Our Location</div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.999375214368!2d107.41758907582125!3d-7.126067092877741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e688ce5f978533f%3A0xab30f1bde73d7559!2sNuansa%20suites%20datarpuspa%20alamendah!5e0!3m2!1sen!2sid!4v1761999939978!5m2!1sen!2sid" width="390" height="450" allowfullscreen="" loading="lazy"></iframe>
+          <iframe title="Nuansa Suites GMap Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.999375214368!2d107.41758907582125!3d-7.126067092877741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e688ce5f978533f%3A0xab30f1bde73d7559!2sNuansa%20suites%20datarpuspa%20alamendah!5e0!3m2!1sen!2sid!4v1761999939978!5m2!1sen!2sid" width="390" height="450" allowFullScreen="" loading="lazy"></iframe>
           <div className="mt-4 text-sm text-gray-600">
             <div>Jl. Raya Ciwidey - Patengan No.199, Alamendah, Kec. Rancabali, Kabupaten Bandung, Jawa Barat 40973</div>
-            <div className="mt-1">Phone: +62 812 3456 7890</div>
+            <div className="mt-1">Phone: +62 852 1144 1718</div>
           </div>
         </div>
       </div>
