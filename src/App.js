@@ -40,30 +40,29 @@ function App() {
 
   // Handle scroll for header transparency and parallax effect
   useEffect(() => {
+    let lastKnownScrollPosition = 0;
+    let ticking = false;
+
     const handleScroll = () => {
-      setIsAtTop(window.scrollY < 50);
-    };
-    window.addEventListener('scroll', handleScroll);
+      lastKnownScrollPosition = window.scrollY;
 
-    // Smooth parallax effect
-    let currentPos = window.scrollY;
-    const smoothing = 0.1;
-    let animationFrameId;
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setIsAtTop(lastKnownScrollPosition < 50);
+          if (backgroundRef.current) {
+            backgroundRef.current.style.backgroundPositionY = `${lastKnownScrollPosition * -0.3}px`;
+          }
+          ticking = false;
+        });
 
-    const smoothParallax = () => {
-      let targetPos = window.scrollY;
-      currentPos += (targetPos - currentPos) * smoothing;
-
-      if (backgroundRef.current) {
-        backgroundRef.current.style.backgroundPositionY = `${currentPos * 0.5}px`;
+        ticking = true;
       }
-      animationFrameId = requestAnimationFrame(smoothParallax);
     };
-    smoothParallax();
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      cancelAnimationFrame(animationFrameId);
     };
   }, []);
 
@@ -164,7 +163,7 @@ function App() {
       </header>
 
       <main className="max-w-5xl mx-auto px-6 scroll-mt-20">
-  <div id="content-area" className="w-full rounded-2xl overflow-hidden" style={{ backgroundColor: 'rgba(243,215,184,0.8)', padding: '35px' }}>
+  <div id="content-area" className="w-full rounded-2xl overflow-hidden" style={{ backgroundColor: 'rgba(243,215,184,0.8)', padding: '35px', marginTop: '80px' }}>
         {/* Hero Section */}
         <section id="home" className="h-screen flex items-center">
           <div className="relative h-[70vh] md:h-[72vh] w-full overflow-hidden">
