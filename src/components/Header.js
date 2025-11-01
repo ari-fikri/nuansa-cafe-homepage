@@ -13,7 +13,14 @@ const COLORS = {
 
 function NavLink({ children, active, onClick }) {
   return (
-    <button onClick={onClick} className={`text-sm ${active ? 'underline' : 'opacity-80'}`} aria-current={active ? 'page' : undefined}>
+    <button
+      onClick={onClick}
+      className={`text-sm px-4 py-1.5 rounded-full transition-colors duration-200 ${
+        active ? 'text-white' : 'opacity-80 hover:opacity-100'
+      }`}
+      style={active ? { backgroundColor: COLORS.primary } : {}}
+      aria-current={active ? 'page' : undefined}
+    >
       {children}
     </button>
   );
@@ -26,7 +33,7 @@ function Header({ route, nav, isAtTop }) {
           <div className={`text-sm ${isAtTop ? 'opacity-85' : ''}`} style={{ color: COLORS.textLight }}>Coffee Shop & Glampings</div>
         </div>
 
-        <nav className={`hidden md:flex items-center gap-6 text-sm transition-colors duration-300`} style={{ color: COLORS.primary }}>
+        <nav className={`hidden md:flex items-center gap-2 text-sm transition-colors duration-300`} style={{ color: COLORS.primary }}>
           <NavLink active={route === 'home'} onClick={() => nav('home')}>Home</NavLink>
           <NavLink active={route === 'menu'} onClick={() => nav('menu')}>Menu</NavLink>
           <NavLink active={route === 'cabins'} onClick={() => nav('cabins')}>Cabins</NavLink>
