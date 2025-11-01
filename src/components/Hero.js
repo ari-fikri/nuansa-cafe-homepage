@@ -17,11 +17,10 @@ function Hero({ nav }) {
             <p className="mt-4 text-lg max-w-md" style={{ color: 'rgba(255, 240, 200, 1)' }}>Make up to something special. Experience the perfect blend of artisanal coffee crafted just for you.</p>
             <div className="mt-6 flex gap-3">
         <button onClick={() => nav('menu')} className="px-6 py-2.5 rounded-full shadow-sm hover:shadow-md transition-all" style={{ backgroundColor: '#4aadb2', color: '#fff' }}>View Menu</button>
-        <button onClick={() => nav('contact')} className="px-6 py-2.5 rounded-full border hover:shadow-sm transition-all" style={{ borderColor: COLORS.primary, color: COLORS.primary }}>Reserve</button>
             </div>
             <div className="mt-6 text-sm text-white/90">
-              <div>Open: Mon–Sun • 08:00 — 21:00</div>
-              <div className="mt-1">Jl. Nuansa No.9, Bandung</div>
+              <div>Open: Mon–Sun • 10:00 — 21:00</div>
+              <div className="mt-1">Jl. Raya Ciwidey - Patengan No.199, Alamendah, Kec. Rancabali, Kabupaten Bandung, Jawa Barat 40973</div>
             </div>
           </div>
         </div>

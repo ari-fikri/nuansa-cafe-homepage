@@ -29,7 +29,7 @@ function NavLink({ children, active, onClick }) {
 function Header({ route, nav, isAtTop }) {
   return (
     <header className={`fixed w-full z-40 transition-all duration-300 ${isAtTop ? 'bg-transparent' : 'bg-white/80 backdrop-blur-sm shadow-sm'}`}>      <div className="max-w-5xl mx-auto flex items-center justify-between py-6 px-6">
-        <div className={`flex items-baseline gap-4 transition-colors duration-300 ${isAtTop ? 'text-primary' : 'text-primary'}`}><h1 className="text-2xl font-serif font-medium" style={{ letterSpacing: '0.02em', color: COLORS.primary }}>Nuansa</h1>
+        <div className={`flex items-baseline gap-4 transition-colors duration-300 ${isAtTop ? 'text-primary' : 'text-primary'}`}><h1 className="text-2xl font-serif font-medium" style={{ letterSpacing: '0.02em', color: COLORS.primary }}>Nuansa Suites</h1>
           <div className={`text-sm ${isAtTop ? 'opacity-85' : ''}`} style={{ color: COLORS.textLight }}>Coffee Shop & Glampings</div>
         </div>
 
